@@ -1,0 +1,11 @@
+{
+  "name": "Golang IOT ping server",
+  "description": "Golang IOT ping server",
+  "keywords": [
+    "iot",
+    "go",
+    "ping"
+  ],
+  "website": "https://github.com/paulcockrell/golang-iot-ping-server",
+  "repository": "https://github.com/paulcockrell/golang-iot-ping-server"
+}
