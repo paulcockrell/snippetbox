@@ -55,8 +55,7 @@ func main() {
 
         // Command line dsn argument was from tutorial, now converted to use Heroku mysql
 	// dsn := flag.String("dsn", "web:pass@/snippetbox?parseTime=true", "mySQL data source name")
-        //dsn := getEnv("JAWSDB_URL", "web:pass@/snippetbox?parseTime=true")
-        dsn := "fqv6f91u1qxbzrk0:zpq1z8g72wzyjd1j@tcp(b8rg15mwxwynuk9q.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306)/hazz8ovy0wr03hvu"
+        dsn := getEnv("DSN", "web:pass@/snippetbox?parseTime=true")
 
 	secret := flag.String("secret", "s6Ndh+pPbnzHbS*+9Pk8qGWhTzbpa@ge", "Secret key")
 	flag.Parse()
