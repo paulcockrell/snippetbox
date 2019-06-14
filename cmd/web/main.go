@@ -38,9 +38,24 @@ type application struct {
 	}
 }
 
+func getEnv(key, fallback string) string {
+  if value, ok := os.LookupEnv(key); ok {
+    return value
+  }
+  return fallback
+}
+
 func main() {
-	addr := flag.String("addr", ":4000", "HTTP network address")
-	dsn := flag.String("dsn", "web:pass@/snippetbox?parseTime=true", "mySQL data source name")
+        // Command line address argument was from tutorial, now converted to use PORT address
+        // for Heroku deployment
+	// addr := flag.String("addr", ":4000", "HTTP network address")
+        port := getEnv("PORT", "4000")
+        addr := fmt.Sprintf(":%s", port)
+
+        // Command line dsn argument was from tutorial, now converted to use Heroku mysql
+	// dsn := flag.String("dsn", "web:pass@/snippetbox?parseTime=true", "mySQL data source name")
+        dsn := getEnv("JAWSDB_URL", "web:pass@/snippetbox?parseTime=true", "mySql data source url")
+
 	secret := flag.String("secret", "s6Ndh+pPbnzHbS*+9Pk8qGWhTzbpa@ge", "Secret key")
 	flag.Parse()
 
