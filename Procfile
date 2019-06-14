@@ -1,1 +1,1 @@
-web: bin/snippetbox
+web: bin/web
