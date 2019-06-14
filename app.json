@@ -1,11 +1,11 @@
 {
-  "name": "Golang IOT ping server",
-  "description": "Golang IOT ping server",
+  "name": "Golang Snippetbox",
+  "description": "Golang Snippetbox",
   "keywords": [
     "iot",
     "go",
     "ping"
   ],
-  "website": "https://github.com/paulcockrell/golang-iot-ping-server",
-  "repository": "https://github.com/paulcockrell/golang-iot-ping-server"
+  "website": "https://github.com/paulcockrell/snippetbox",
+  "repository": "https://github.com/paulcockrell/snippetbox"
 }
