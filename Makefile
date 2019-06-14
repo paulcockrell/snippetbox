@@ -4,7 +4,7 @@ DOCKER_CMD=$(DOCKER_BUILD)/snippetbox
 
 $(DOCKER_CMD): clean
   mkdir -p $(DOCKER_BUILD)
-  $(GO_BUILD_ENV) go build -v -o $(DOCKER_CMD) .
+  $(GO_BUILD_ENV) go build -v -o $(DOCKER_CMD) ./cmd/web
 
 clean:
   rm -rf $(DOCKER_BUILD)
