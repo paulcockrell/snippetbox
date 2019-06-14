@@ -1,5 +1,11 @@
 # Snippetbox
 
+## Run
+
+```
+go run ./cmd/web
+```
+
 ## Build
 
 ```
